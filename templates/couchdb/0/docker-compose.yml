@@ -7,12 +7,12 @@
     volumes:
       - couchdb_dados:/usr/local/var/lib/couchdb
     ports:
-      - ${HOST_COUCHDB_PORT}:5984
+      - "${HOST_COUCHDB_PORT}:5984"
 fauxton:
     image: 3apaxicom/fauxton
     restart: always
     ports:
-      - ${HOST_FAUXTON_PORT}:8000
+      - "${HOST_FAUXTON_PORT}:8000"
     links:
       - couchdb:db
     command:
