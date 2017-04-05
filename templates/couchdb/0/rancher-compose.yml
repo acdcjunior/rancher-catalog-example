@@ -3,18 +3,18 @@
   version: "v1"
   description: "My CouchDB Application Catalog"
   questions: 
-    - variable: "COUCHDB_USER_PASS"
-      label: "CouchDB admin password"
-      description: "Password for the CouchDB admin user"
-      required: true
-      type: "password"
-      default: pass
     - variable: "COUCHDB_USER_NAME"
       label: "CouchDB Admin Username"
       description: "Admin user for the CouchDB database"
       required: true
       type: "string"
       default: root
+    - variable: "COUCHDB_USER_PASS"
+      label: "CouchDB admin password"
+      description: "Password for the CouchDB admin user"
+      required: true
+      type: "password"
+      default: pass
     - variable: "HOST_FAUXTON_PORT"
       label: "Fauxton port to be exposed on the host"
       description: "Fauxton port that is going to be exposed in the host"
