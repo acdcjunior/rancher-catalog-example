@@ -1,4 +1,5 @@
- couchdb:
+services:
+  couchdb:
     image: couchdb
     restart: always
     environment:
@@ -8,7 +9,7 @@
       - couchdb_dados:/usr/local/var/lib/couchdb
     ports:
       - "${HOST_COUCHDB_PORT}:5984"
-fauxton:
+  fauxton:
     image: 3apaxicom/fauxton
     restart: always
     ports:
