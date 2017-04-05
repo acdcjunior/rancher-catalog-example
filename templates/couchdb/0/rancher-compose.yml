@@ -1,17 +1,17 @@
 .catalog:
   name: "CouchDB"
-  version: "v1"
+  version: "1.0.0.0.0b0-GA-RC1.FINAL"
   description: "My CouchDB Application Catalog"
   questions: 
     - variable: "COUCHDB_USER_NAME"
-      label: "CouchDB Admin Username"
-      description: "Admin user for the CouchDB database"
+      label: "CouchDB administrative Username"
+      description: "Administrative user for the CouchDB database"
       required: true
       type: "string"
       default: root
     - variable: "COUCHDB_USER_PASS"
-      label: "CouchDB admin password"
-      description: "Password for the CouchDB admin user"
+      label: "CouchDB administrative password"
+      description: "Password for the CouchDB administrative user"
       required: true
       type: "password"
       default: pass
@@ -22,8 +22,8 @@
       type: "string"
       default: 8080
     - variable: "HOST_COUCHDB_PORT"
-      label: "Port to be exposed on the host"
-      description: "Port that is going to be exposed in the host"
+      label: "CouchDB port to be exposed on the host"
+      description: "CouchDB port that is going to be exposed in the host"
       required: true
       type: "string"
       default: 5984

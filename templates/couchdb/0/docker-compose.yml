@@ -18,4 +18,4 @@ fauxton:
     command:
       - sh
       - "-c"
-      - "fauxton -c http://db:${HOST_COUCHDB_PORT}"
+      - "fauxton -c http://db:5984"
