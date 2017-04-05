@@ -3,9 +3,9 @@
   version: "v1"
   description: "My CouchDB Application Catalog"
   questions: 
-    - variable: "MYSQL_ROOT_PASSWORD"
-      label: "Mysql root password"
-      description: "Password for the mysql root user"
+    - variable: "COUCHDB_USER_PASS"
+      label: "CouchDB admin password"
+      description: "Password for the CouchDB admin user"
       required: true
       type: "password"
       default: pass
