@@ -5,9 +5,9 @@
       - COUCHDB_USER=${COUCHDB_USER_NAME}
       - COUCHDB_PASSWORD=${COUCHDB_USER_PASS}
     volumes:
-        - couchdb-dados:/usr/local/var/lib/couchdb
+      - couchdb_dados:/usr/local/var/lib/couchdb
     ports:
-     - ${HOST_COUCHDB_PORT}:5984
+      - ${HOST_COUCHDB_PORT}:5984
 fauxton:
     image: 3apaxicom/fauxton
     restart: always

@@ -1,6 +1,6 @@
 .catalog:
   name: "CouchDB"
-  version: "1.0.0.0b0-RC.1-GA.FINAL"
+  version: "1.0.0.0b0.394857-20170307-RC.1-GA.FINAL"
   description: "My CouchDB Application Catalog"
   questions: 
     - variable: "COUCHDB_USER_NAME"
